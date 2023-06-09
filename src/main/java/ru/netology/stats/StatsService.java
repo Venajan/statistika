@@ -1,15 +1,15 @@
 package ru.netology.stats;
 
-import java.util.Arrays;
-
 public class StatsService {
 
     public int sumSales(long[] sales) {
 
-        long sumAllMonth = Arrays.stream(sales).sum();
+        int sumAllMonth = 0;
+        for (long i : sales) {
+            sumAllMonth += i;
 
-        return (int) sumAllMonth;
-
+        }
+        return sumAllMonth;
     }
 
     public double averSales(long[] sales) {

@@ -18,6 +18,8 @@ public class StatsServiceTest {
         int actual = service.sumSales(sales);
 
         Assertions.assertEquals(expected, actual);
+
+
     }
 
 
@@ -31,6 +33,8 @@ public class StatsServiceTest {
         double actual = service.averSales(sales);
 
         Assertions.assertEquals(expected, actual);
+
+
     }
 
     @Test
@@ -67,6 +71,8 @@ public class StatsServiceTest {
         int actual = service.underAverSales(sales);
 
         Assertions.assertEquals(expected, actual);
+
+
     }
 
     @Test
@@ -79,5 +85,7 @@ public class StatsServiceTest {
         int actual = service.overAverSales(sales);
 
         Assertions.assertEquals(expected, actual);
+
+
     }
 }
